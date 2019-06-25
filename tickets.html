@@ -1,38 +1,50 @@
-<!-- Mirren MN: Page Head. Links to bootstrap carousel -->
+<!-- Head, links to bootstrap carousel and stylesheets-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Tickets</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- NOTE: NEED TO LINK TO OUR STYLESHEEET AFTER THIS ONE TO LOAD OUR STYLE OVER THE TOP - SO IT'S IN THE BODY TAG -->
+  <!-- NOTE: LINK TO STYLESHEEET AFTER CAROUSEL TO LOAD OUR STYLE OVER THE TOP -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="CSS/stylesheet_mmn.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
+<body style="background-color:#3d3d3d;">
 
-<body>
+<!-- Saana Ranta -->
 
-  <!-- Saana: bootstrap navbar to be added to all pages  -->
+<!-- - - - NAVBAR - - -  -->
 
 <nav class="navbar navbar-inverse">
-<div class="container-fluid">
-<div class="navbar-header">
-<a class="navbar-brand" href="index.html">Home</a>
-</div>
-<ul class="nav navbar-nav">
-<li class="active"><a href="#visit">Plan your visit</a></li>
-  <li><a href="#explore">Explore</a></li>
-  <li><a href="tickets.html">Tickets</a></li>
-  <li><a href="attractions.html">Attractions</a></li>
-  <li><a href="#shop">Shop</a></li>
-</ul>
-</div>
+  <div class="container-fluid">
+   <div class="navbar-header">
+     <a class="navbar-brand" href="index.html">Home</a>
+   </div>
+   <ul class="nav navbar-nav">
+     <li class="active"><a href="#visit">Plan your visit</a></li>
+       <li><a href="attractions.html">Attractions</a></li>
+       <li><a href="Tickets.html">Tickets</a></li>
+       <li><a href="#events">Events</a></li>
+       <li><a href="#shop">Shop</a></li>
+    </ul>
+  </div>
 </nav>
 
- <!--  - - -Mirren MN: HORIZONTAL SLIDE CAROUSEL- - - - - - -  -->
+<!-- Mirren MN -->
+<div id="Banner">
+  <div class="banner">
+    <div class="title">
+      <h1>TICKETS</h1>
+    </div>
+  </div>
+</div>
+
+ <!-- - - -  HORIZONTAL SLIDE CAROUSEL- - - - - - -  -->
 <div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -47,7 +59,7 @@
       <div class="item active">
         <span>
           <a href="link/to/relevant/deal">
-        		<img src="Images/TicketPage/Carousel/FoodDeal.png" alt="An image of a burger
+            <img src="images/Tickets/Carousel/FoodDeal.png" alt="An image of a burger
             advertising a 2 for 1 deal on food on sundays from 5 to 7pm">
           </a>
         </span>
@@ -56,7 +68,7 @@
       <div class="item">
           <span>
           	<a href="link/to/relevant/deal">
-        			<img src="Images/TicketPage/Carousel/MerchDeal.png" alt="An image of a Marvel
+              <img src="images/Tickets/Carousel/MerchDeal.png" alt="An image of a Marvel
               backpack advertising the merchandise available in the shop">
           	</a>
         </span>
@@ -65,7 +77,7 @@
       <div class="item">
           <span>
           	<a href="link/to/relevant/deal">
-        			<img src="Images/TicketPage/Carousel/TicketDeal.png" alt="An image of a ticket
+              <img src="images/Tickets/Carousel/TicketDeal.png" alt="An image of a ticket
               advertising buy one get one half price on tickets for this week only">
           	</a>
        	 </span>
@@ -84,140 +96,137 @@
   </div>
 </div>
 
+  <!-- Ticket 'grid' items -->
 
-  <!-- Mirren MN: Ticket grid items -->
+<div id="Ticket-Item-Grid">
+  <div class="grid-container">
+    <!-- Family Deal -->
+     <div>
+       <section class="grid-item">
+               <a href="link/to/page">
+                 <img src="images/Tickets/Ticket_BabySuperhero.jpg" alt="Picture of baby Marvel Superheroes on comic cover" width="200" height="250"/>
+                 </a>
+               <div class="grid-details">
+                 <h2>FAMILY DEAL</h2>
+                 <p>Half Price Food and Drink for Kids</p>
+                 <p>Two Adults Two Children</p>
+               </div>
+             <div class="grid-small-text">
+               <p>£300</p>
+             </div>
+             <div class="grid-more-info-button">
+               <button>MORE INFO</button>
+             </div>
+           </section>
+     </div>
 
-<ul class="ticket-grid">
+    <!-- Large Group -->
+     <div>
+       <section class="grid-item">
+               <a href="link/to/page">
+                 <img src="images/Tickets/Ticket_Avengers.jpg" alt="Picture of the Avengers on Comic Front" width="200" height="250"/>
+                 </a>
+               <div class="grid-details">
+                 <h2>LARGE GROUP</h2>
+                 <p>Priority Entry</p>
+                 <p>Group Accomodation Discount</p>
+               </div>
+             <div class="grid-small-text">
+               <p>£200</p>
+             </div>
+             <div class="grid-more-info-button">
+               <button>MORE INFO</button>
+             </div>
+           </section>
+     </div>
 
-    <!--FAMILY DEAL -->
-    <li>
-       <section class="ticket-block">
-          <a href="link/to/page">
-            <img src="Images/TicketPage/Ticket_BabySuperhero.jpg" alt="Picture of baby Marvel Superheroes on comic cover" width="200" height="250"/>
-            </a>
-          <div class="ticket-details">
-            <h2>Family Deal</h2>
-            <p>1/2 price food and drink for kids</p>
-            <p>2 adults 2 children</p>
-          </div>
-        <div class="ticket-price">
-          <p>£300</p>
-        </div>
-        <div class="ticket-more-info-button">
-          <button>More Info</button>
-        </div>
-      </section>
-    </li>
+    <!-- Season Pass -->
 
-    <!--LARGE GROUP -->
-    <li>
-       <section class="ticket-block">
-          <a href="link/to/page">
-            <img src="Images/TicketPage/Ticket_Avengers.jpg" alt="Picture of the Avengers on Comic Front" width="200" height="250"/>
-          </a>
-            <div class="ticket-details">
-              <h2>Large Group</h2>
-              <p>Priority Entry</p>
-              <p>Group Accomodation Discount</p>
-          </div>
-           <div class="ticket-price">
-            <p>£200</p>
-          </div>
-          <div class="ticket-more-info-button">
-            <button>More Info</button>
-          </div>
-          </section>
-    </li>
+     <div>
+       <section class="grid-item">
+               <a href="link/to/page">
+                <img src="images/Tickets/Ticket_Thor.jpeg" alt="Picture of Thor on Comic Front" width="200" height="250"/>
+                 </a>
+               <div class="grid-details">
+                 <h2>SEASON PASS</h2>
+                 <p>Skip the Queues</p>
+                 <p>'Friend of the Park' Discounts</p>
+               </div>
+             <div class="grid-small-text">
+               <p>£500</p>
+             </div>
+             <div class="grid-more-info-button">
+               <button>MORE INFO</button>
+             </div>
+           </section>
+     </div>
 
-    <!--SEASON PASS -->
-    <li>
-      <section class="ticket-block">
-        <a href="link/to/page">
-          <img src="Images/TicketPage/Ticket_Thor.jpeg" alt="Picture of Thor on Comic Front" width="200" height="250"/>
-        </a>
-          <div class="ticket-details">
-            <h2>Season Pass</h2>
-            <p>Skip the Queues</p>
-            <p>'Friend of the Park' Discounts</p>
-        </div>
-        <div class="ticket-price">
-         <p>£500</p>
-        </div>
-        <div class="ticket-more-info-button">
-          <button>More Info</button>
-        </div>
-      </section>
-    </li>
+    <!-- Weekly Pass -->
+     <div>
+       <section class="grid-item">
+               <a href="link/to/page">
+                 <img src="images/Tickets/Ticket_SpiderMan.jpeg" alt="Picture of Spider Man on Comic Front" width="200" height="250"/>
+                 </a>
+               <div class="grid-details">
+                 <h2>WEEKLY PASS</h2>
+                 <p>Discounted Food and Drink</p>
+                 <p>Priority Entry</p>
+               </div>
+             <div class="grid-small-text">
+               <p>£150</p>
+             </div>
+             <div class="grid-more-info-button">
+               <button>MORE INFO</button>
+             </div>
+           </section>
+     </div>
 
-    <!--WEEKLY PASS -->
-    <li>
-      <section class="ticket-block">
-        <a href="link/to/page">
-          <img src="Images/TicketPage/Ticket_SpiderMan.jpeg" alt="Picture of Spider Man on Comic Front" width="200" height="250"/>
-        </a>
-          <div class="ticket-details">
-            <h2>Weekly Pass</h2>
-            <p>Discounted Food and Drink</p>
-            <p>Priority Entry</p>
-        </div>
-        <div class="ticket-price">
-          <p>£150</p>
-        </div>
-        <div class="ticket-more-info-button">
-          <button>More Info</button>
-        </div>
-      </section>
-    </li>
+    <!-- Day Pass -->
+     <div>
+       <section class="grid-item">
+               <a href="link/to/page">
+                 <img src="images/Tickets/Ticket_IronMan.jpg" alt="Picture of Iron Man on Comic Front" width="200" height="250"/>
+                 </a>
+               <div class="grid-details">
+                 <h2>DAY PASS</h2>
+                 <p>Entry to the Park</p>
+                <p></p>
+                <p></p>
+               </div>
+             <div class="grid-small-text">
+               <p>£50</p>
+             </div>
+             <div class="grid-more-info-button">
+               <button>MORE INFO</button>
+             </div>
+           </section>
+     </div>
 
-    <!--DAY PASS -->
-    <li>
-      <section class="ticket-block">
-        <a href="link/to/page">
-          <img src="Images/TicketPage/Ticket_IronMan.jpg" alt="Picture of Iron Man on Comic Front" width="200" height="250"/>
-        </a>
-          <div class="ticket-details">
-            <h2>Day Pass</h2>
-            <p>Entry to the Park</p>
-        </div>
-        <div class="ticket-price">
-          <p>£50</p>
-        </div>
-        <div class="ticket-more-info-button">
-          <button>More Info</button>
-        </div>
-      </section>
-    </li>
+    <!-- Schools/Institutions -->
+     <div>
+       <section class="grid-item">
+               <a href="link/to/page">
+                 <img src="images/Tickets/Ticket_CaptainAmerica.jpg" alt="Picture of Captain America on Comic Front" width="200" height="250"/>
+                 </a>
+               <div class="grid-details">
+                 <h2>SCHOOLS/INSTITUTIONS</h2>
+                 <p>Priority Entry</p>
+                 <p>Exclusive Use of Educational Areas</p>
+               </div>
+             <div class="grid-small-text">
+               <p>Enquire</p>
+             </div>
+             <div class="grid-more-info-button">
+               <button>MORE INFO</button>
+             </div>
+           </section>
+     </div>
+  </div>
+</div>
 
-    <!--SCHOOLS/INSTITUTIONS-->
-    <li>
-      <section class="ticket-block">
-        <a href="link/to/page">
-          <img src="Images/TicketPage/Ticket_CaptainAmerica.jpg" alt="Picture of Captain America on Comic Front" width="200" height="250"/>
-        </a>
-          <div class="ticket-details">
-            <h2>Schools/Institutions</h2>
-            <p>Discounted Prices</p>
-            <p>Priority Entry</p>
-            <p>Exclusive Use of Educational Areas</p>
-        </div>
-        <div class="ticket-price">
-          <p>Enquire</p>
-        </div>
-        <div class="ticket-more-info-button">
-          <button>More Info</button>
-        </div>
-      </section>
-    </li>
-
-</ul>
-
-<!--Saana: footstrap in progress to be added to all pages-->
-
-  <div class="footer">
-  <!--Needs adding when finished
-        <p><h3>Subscribe to MARVEL via email</h3></p>-->
-
-
+<!-- Saana Ranta -->
+<!-- FOOTER -->
+<div class="footer">
 <table style="width:33%">
   <tr>
     <th>Contact</th>
@@ -235,5 +244,4 @@
     <td>SHOP</td>
   </tr>
 </table>
-
-  </div>
+</div>
