@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "MarvelFont";
+  src:url(Fonts/Marvel-Regular.ttf);
+}
+
+  body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+  }
+
+  .container{
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .carousel-inner{
+  	width: 100%;
+    height: 30%;
+    justify-content: center;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .banner {
+    width: 100%;
+    height: 100px;
+    background-color: #c60101;
+    text-align: center;
+  }
+
+  .banner .title
+  {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .banner .title h1
+  {
+    text-shadow: 5px 2px #000000;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-family: MarvelFont;
+  }
+
+  .grid-container{
+       display: grid;
+       grid-template-columns: 100px 100px 100px;
+       grid-template-rows: 100px 100px 100px;
+       grid-column-gap: 300px;
+       grid-row-gap: 400px;
+       justify-content: center;
+  }
+
+  .grid-item
+  {
+    display: inline-block;
+    background-color: #f2f2f2;
+    padding: 30px;
+    min-height: 450px;
+    max-height: 450px;
+    min-width: 200px;
+  }
+
+  .grid-details h2
+  {
+    font-family: MarvelFont;
+  	font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-details p
+  {
+  	font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-small-text p
+  {
+  	float: left;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #e50000;
+  }
+
+  .grid-more-info-button button
+  {
+    font-family: MarvelFont;
+    font-size: 20px;
+    background-color: #e50000;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+  }
+
+  .grid-more-info-button button:hover
+  {
+  	background-color: #c10303;
+  }
+
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(224,224,224);
+   color: white;
+   text-align: center;
+}
