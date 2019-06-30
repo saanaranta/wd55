@@ -3,125 +3,137 @@
 <html lang="en">
 
 <head>
-	<title>Landing</title>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <!-- Needs adding when finished-->
-
-
- <!--Saana: style to be added to CSS for final website-->
-<style>
-	.footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: rgb(224,224,224);
-	color: white;
-	text-align: center;
-	}
-</style>
-
+    <title>Marvel World - Theme Park for Marvel Fans</title>
+    <meta charset="utf-8"> 
+    <meta name="description" content="This is a website for a theme park about all things Marvel.">
+    <meta name="keywords" content="Marvel 'Action Hero' 'Amusement Park' Fun 'Day Out' Theme Park'">
+    <meta name="author" content="WD 5 5">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="600">
+	<link rel="stylesheet" type = "text/css" href="CSS/main.css"/>
+    <link rel="stylesheet/bootstrap" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   
  </head>
+    
+<body>
+<!-- Navigation Bar --> 
+    
+<nav>
+    <object data="Images/Header/MarvelLogoSmall.png"></object>
+    
+    <ol>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Attractions.html">Attractions</a></li>
+    <li><a href="Tickets.html">Tickets</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#shop">Shop</a></li>
+    </ol>
+</nav>
 
- <nav>
-    <!-- Needs adding when finished-->
- </nav>
 
-
- <main>
-
-
-<!-- Hero Header - will be improved with CSS to cycle through pictures with titles -->
+<main>
+    
+<!-- Hero Header -->
+     
+     
 <section>
-
-	<!-- Saana: bootstrap navbar to be added to all pages  -->
-
-    <nav class="navbar navbar-inverse">
-   <div class="container-fluid">
-     <div class="navbar-header">
-       <a class="navbar-brand" href="index.html">Home</a>
-     </div>
-     <ul class="nav navbar-nav">
-       <li class="active"><a href="#visit">Plan your visit</a></li>
-         <li><a href="#explore">Explore</a></li>
-         <li><a href="tickets.html">Tickets</a></li>
-         <li><a href="attractions.html">Attractions</a></li>
-         <li><a href="#shop">Shop</a></li>
-      </ul>
-   </div>
- </nav>
-
-	<div>
-		<img src="Images/LandingPage/team.jpg"  alt="Slide 3">
-		<h2>Avengers Assemble</h2>
-		<p> Assemble your team and come visit the Marvel themepark with attractions from all your favourite movies!</p>
+	<div class="carousel">
+	
+		<input type="checkbox" class="carouselNavigation"> 
+		<div class="slide" slide="1" annot="First Slide">
+		<img src="images/Landing/team.jpg" alt="Slide 3">
 	</div>
+
+  <input type="checkbox" class="carouselNavigation">
+  <div class="slide" slide="2" annot="Second Slide">
+    <img src="images/Landing/logos.jpg"  alt="Slide 2"> 
+	</div>
+
+  <input type="checkbox" class="carouselNavigation">
+
+  <div class="slide" slide="3" annot="Third Slide">
+    <img src="images/Landing/themepark.jpg" alt="Slide 1">
+  </div>
+   </div>
    </section>
-
+   
   <!-- Big Title intro/advertisement elements-->
-  <article>
-   <div>
-   <h2>Win Tickets Now!</h2>
-   <span>
-   <p>We are giving away one Family Pass to a lucky winner this month! All you have to do to be in with a chance of winning is send us a picture of you and your family with a Marvel theme!</p>
-   </span>
-   <img src="Images/LandingPage/tickets.png" alt="Tickets">
+
+<div class="row">
+  <div class="column">
+	<div class="card-right">
+   <img class="img-left" src="images/Landing/tickets.png" >
+		<h2>WIN TICKETS NOW!</h2>
+		<h5>Win a Family Pass to our park, June 10, 2019</h5>
+		
+	<p>We are giving away one Family Pass to a lucky winner this month!</p><p> All you have to do to be in with a chance of winning is send us a picture of you and your family with a Marvel theme!</p>
+				
+     
+    </div>
+
+<div class="row">
+   <div class="card-left">
+   <img class="img-right" src="images/Landing/StarLord.jpg" >
+		<h2>STAR LORD</h2>
+		<h5> All new attraction! June 01, 2019</h5>
+		
+		<p>Our newest addition to our awesome rides, we proudly present the Star Lord Experience!</p><p> Journey through your favourite locations from the Guardians of the Galaxy franchise on this epic adventure!</p>
+	</div>
+	</div>
+ 
+  
+   <div class="card-right">
+    <img class="img-left" src="images/Landing/backpack.jpg" alt="Backpack">
+   <h2>NEW MERCHANDISE</h2>
+   <h5>Shop products updated, May 26, 2019</h5>
+  
+   <p>Head on over to our shop to discover our brand new Avengers Endgame merchandise.</p><p> Perfect ideas for gifts or to treat yourself!</p>
+	
    </div>
-   </article>
-   <article>
-   <div>
-   <h2>Star Lord</h2>
-   <p>Our newest addition to our awesome rides, we proudly present the Star Lord Experience! Journey through your favourite locations from the Guardians of the Galaxy franchise on this epic adventure!</p>
-   <img src="Images/LandingPage/StarLord.jpg" alt="Star Lord">
+   
+     <div class="card-left">
+	 <img class="img-right" src="images/Landing/cast.jpg" alt="Cast">
+   <h2>GUEST APPEARANCES</h2>
+   <h5> Meet the Avengers! May 19, 2019</h5>
+      
+   <p>To celebrate the release of Avengers Endgame and the close of an era,</p><p> come and meet your favourite superheroes with appearances from the cast of Avengers Endgame</p>
+
    </div>
-   </article>
-   <article>
-   <div>
-   <h2>All new Merchandise</h2>
-   <p>Head on over to our shop to discover our brand new Avengers Endgame merchandise. Perfect ideas for gifts or to treat yourself!</p>
-	<img src="Images/LandingPage/backpack.jpg" alt="Backpack">
    </div>
-   </article>
-   <article>
-   <div>
-   <h2>Guest Appearances</h2>
-   <p>To celebrate the release of Avengers Endgame and the close of an era, come and meet your favourite superheroes with appearances from the cast of Avengers Endgame</p>
-   <img src="Images/LandingPage/cast.jpg" alt="Cast">
-   </div>
-   </article>
-
-
-  </main>
-	<!--Saana: footstrap in progress to be added to all pages-->
-
-	  <div class="footer">
-	  <!--Needs adding when finished
-	        <p><h3>Subscribe to MARVEL via email</h3></p>-->
-
-
-	    <table style="width:33%">
-	  <tr>
-	    <th>Contact</th>
-	    <th>Plan your visit</th>
-	    <th>Site</th>
-	  </tr>
-	  <tr>
-	    <td>+00 000 0000000</td>
-	    <td>info@info.com</td>
-	      <td><a href="#tickets">BUY TICKETS</a></td>
-	  </tr>
-	  <tr>
-	    <td>EXPLORE</td>
-	    <td>TICKETS</td>
-	    <td>SHOP</td>
-	  </tr>
-	</table>
-
-	  </div>
-
-
+</div>
+   
+ 
+ 
+  </main> 
+    
+  <!-- Saana Ranta -->
+    
+<footer>
+    <div id="footerInfo">
+        <ul>
+            <li id = "fsection1"><b>Subscribe to Marvel via email</b><br>
+            Get updates on events<br>
+            Win amazing prizes</li>
+            <li id = "fsection2"><a href="tel:86 010 8888 8888" alt="phone number">+86 010 8888 8888</a><br>
+            info@marvel.com<br>
+            <a href="Tickets.html">Buy tickets</a></li>
+            <li id = "fsection3"><a href="index.html">Home</a><br>
+                                    <a href="Attractions.html">Attractions</a><br>
+                                    <a href="Tickets.html">Tickets</a><br>
+                                    <a href="#events">Events</a><br>
+                                    <a href="#shop">Shop</a></li>
+            <li id = "fsection4"><a href="#characters">Characters</a><br>
+                                    <a href="#explore">Explore</a><br>
+                                    <a href="#dining">Dining</a><br>
+                                    <a href="#events">Map</a><br>
+                                    <a href="#shop">FAQ</a></li>
+        </ul>
+    </div>
+</footer>
+    
+</body>
 </html>
+</html>
+
